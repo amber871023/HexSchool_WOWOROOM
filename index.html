@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> WOWOROOM </title>
+  <link rel="stylesheet" href="./css/index.css">
+<!--Bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<!--Material icons-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.css" rel="stylesheet">
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color: #20c997;">
+        <div class="container">
+            <h1><a href="./index.html" class="navbar-brand text-dark">WOWOROOM</a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="material-icons d-md-none d-block toggle">
+                menu
+            </span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item"><a href="#bedAdvantage" class="nav-link text-dark fs-5 fw-bold">床架優勢</a></li>
+                <li class="nav-item"><a href="#transport" class="nav-link text-dark fs-5 fw-bold">運送方式</a></li>
+                <li class="nav-item"><a href="#productList" class="nav-link text-dark fs-5 fw-bold">產品列表</a></li>
+                <li class="nav-item"><a href="#orderInfo" class="nav-link text-white fs-5 fw-bold">立即預訂</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!--Banner-->
+    <div id="carouselExampleIndicators" class="container carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active d-flex align-items-end justify-content-center justify-content-md-end">
+            <div class="banner rounded" style="background-image:url('./asset/banner.jpg')"></div>
+            <div class="carousel-caption d-none d-md-block">
+                <h3>WOWOROOM</h3>
+                <p> 與您一起品味生活，打造真材實料的美</p>
+              </div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner rounded" style="background-image:url('./asset/banner-1.jpg')"></div>
+          </div>
+          <div class="carousel-item">
+            <div class="banner rounded" style="background-image:url('./asset/banner-2.jpg')"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!--床墊優勢-->
+    <section class="container mb-5" id="bedAdvantage">
+        <div class="row">
+            <div class="col-12 mb-3"><h3 class="text-center fw-bold">床墊優勢</h3></div>
+            <div class="col-12 col-md-4 position-relative imgHover mb-3">
+                <img class="rounded" src="./asset/advantage.png" alt="原木料環保" width="100%">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h3 class="text-white">原木料環保</h>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 position-relative imgHover mb-3">
+                <img class="rounded " src="./asset/advantage-1.png" alt="好收納" width="100%">
+                <div class="position-absolute top-50 start-50 translate-middle">
+                    <h3 class="text-white">好收納</h>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 position-relative imgHover">
+                <img class="rounded" src="./asset/advantage-2.png" alt="好組裝" width="100%">
+                   <div class="position-absolute top-50 start-50 translate-middle">
+                    <h3 class="text-white">好組裝</h>
+                </div>
+            </img>
+            </div>
+        </div>   
+      </section>
+    <!--家具比較-->
+    <section class="bg-main py-4 mb-5">
+        <div class="container">
+            <h3 class="text-center fw-bold">家具比較</h3>
+            <div class="d-flex justify-content-center">
+                <table class="table text-nowrap">
+                    <thead>
+                        <tr>
+                            <th class="border-dark"></th>
+                            <th class="border-dark">窩窩系統模組家具</th>
+                            <th class="border-dark text-muted">組合式家具</th>
+                            <th class="border-dark text-muted">實木家具</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-secondary">
+                            <th>可單人自行組裝</th>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                            <td class="text-muted">不一定</td>
+                            <td></td>
+                        </tr>
+                        <tr class="border-secondary">
+                            <th>可多次重複拆裝</th>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr class="border-secondary">
+                            <th>床墊規格彈性大</th>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                            <td class="text-muted">不一定</td>
+                            <td class="text-muted">不一定</td>
+                        </tr>
+                        <tr class="border-secondary">
+                            <th>材質可長久使用</th>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                            <td></td>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                        </tr>
+                        <tr class="border-secondary">
+                            <th scope="row">小客車即可搬運</th>
+                            <td>
+                                <span class="material-icons text-main">done</span>
+                            </td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      </section>
+    <!--流程-->
+    <section class="container" id="transport">
+        <h3 class="text-center fw-bold">運送方式</h3>
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-9">
+        <ul class="d-flex justify-content-evenly text-center">
+            <li>
+                <div class="mb-2">
+                    <span class="material-icons fs-1 border border-dark border-3 rounded-circle p-3">shopping_cart</span>
+                </div>
+                <h4 class="mb-1">STEP.1</h4>
+                <p class="fw-bold">選購商品</p>
+            </li>
+            <li class="text-cente mt-4">
+                <span class="material-icons">arrow_right</span>
+            </li>
+            <li>
+                <div class="mb-2"> 
+                    <span class="material-icons fs-1 border border-dark border-3 rounded-circle p-3">format_list_bulleted</span>
+                </div>
+                <h4 class="mb-1">STEP.2</h4>
+                <p class="fw-bold">填寫預定資料</p>
+            </li>
+            <li class="text-center mt-4">
+                <span class="material-icons">arrow_right</span>
+            </li>
+            <li>
+                <div class="mb-2">
+                    <span class="material-icons fs-1 border border-dark border-3 rounded-circle p-3">local_post_office</span>
+                </div>
+                <h4 class="mb-1">STEP.3</h4>
+                <p class="fw-bold">預定成功</p>
+            </li>
+            <li class="text-center mt-4">
+                <span class="material-icons">arrow_right</span>
+            </li>
+            <li>
+                <div class="mb-2">
+                    <span class="material-icons fs-1 border border-dark border-3 rounded-circle p-3">done</span>
+                </div>
+                <h4 class="mb-1">STEP.4</h4>
+                <p class="fw-bold">Email 付款資訊</p>
+            </li>
+        </ul>
+    </div>
+    </div>
+      </section>
+    <!--產品列-->
+    <section class="container" id="productList">
+        <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mb-3">
+                <select class="form-select js-productSelect" aria-label="Default select example">
+                    <option value="全部" selected>全部</option>
+                    <option value="床架">床架</option>
+                    <option value="收納">收納</option>
+                    <option value="窗簾">窗簾</option>
+                </select>
+            </div>
+        </div>
+        <ul class="row d-flex js-productList">
+            <!--loading-->
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;background:#fff;display:block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+                <circle cx="75" cy="50" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.9166666666666666s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.9166666666666666s"></animate>
+                </circle><circle cx="71.65063509461098" cy="62.5" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.8333333333333334s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.8333333333333334s"></animate>
+                </circle><circle cx="62.5" cy="71.65063509461096" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.75s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.75s"></animate>
+                </circle><circle cx="50" cy="75" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.6666666666666666s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.6666666666666666s"></animate>
+                </circle><circle cx="37.50000000000001" cy="71.65063509461098" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.5833333333333334s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5833333333333334s"></animate>
+                </circle><circle cx="28.34936490538903" cy="62.5" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.5s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.5s"></animate>
+                </circle><circle cx="25" cy="50" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.4166666666666667s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.4166666666666667s"></animate>
+                </circle><circle cx="28.34936490538903" cy="37.50000000000001" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.3333333333333333s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.3333333333333333s"></animate>
+                </circle><circle cx="37.499999999999986" cy="28.349364905389038" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.25s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.25s"></animate>
+                </circle><circle cx="49.99999999999999" cy="25" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.16666666666666666s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.16666666666666666s"></animate>
+                </circle><circle cx="62.5" cy="28.349364905389034" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="-0.08333333333333333s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="-0.08333333333333333s"></animate>
+                </circle><circle cx="71.65063509461096" cy="37.499999999999986" fill="#dcfff8" r="5">
+                  <animate attributeName="r" values="3;3;5;3;3" times="0;0.1;0.2;0.3;1" dur="1s" repeatCount="indefinite" begin="0s"></animate>
+                  <animate attributeName="fill" values="#dcfff8;#dcfff8;#20c997;#dcfff8;#dcfff8" repeatCount="indefinite" times="0;0.1;0.2;0.3;1" dur="1s" begin="0s"></animate>
+                </circle>
+                </svg>
+        </ul>
+      </section>
+    <!--購物車-->
+    <section class="bg-light py-4 mb-5">
+        <div class="container">
+        <h3 class="text-center fw-bold mb-4">我的購物車</h3>
+        <div class="row justify-content-center ">
+            <div class="col-12 col-md-10">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-4 fs-5 fw-bold">品項</div>
+                    <div class="col-2 fs-5 fw-bold px-0">單價</div>
+                    <div class="col-2 fs-5 fw-bold px-0">數量</div>
+                    <div class="col-2 fs-5 fw-bold px-0">金額</div>
+                    <div class="col-2"></div>
+                </div>
+                <ul class="row g-2 js-cartList">
+                </ul>
+                <div class="row mb-3">
+                    <div class="col-4 fs-5 fw-bold">
+                        <button class="js-clearAllProductBtn btn btn-outline-dark" type="button">清除全部訂單</button>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-2 d-none d-md-flex"></div>
+                    <div class="col-2 fs-6  fw-bold px-0">總金額</div>
+                    <div class="col-2 js-totalPrice fs-5 fw-bold px-0">NT$0</div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </section>
+    <!--訂單資料-->
+    <section class="container mb-5" id="orderInfo">
+        <h3 class="text-center fw-bold">填寫預訂資料</h3>
+        <div class="d-flex justify-content-center">
+        <form class="row col-10 col-md-5 g-3">
+            <div class="col-12">
+              <label for="validationName" class="form-label">姓名 <small class="text-danger fw-bold" data-message="name"></small></label>
+              <input type="text" class="form-control" id="validationName" placeholder="請輸入姓名">
+            </div>
+            <div class="col-12">
+              <label for="validationTel" class="form-label">電話 <small class="text-danger fw-bold" data-message="phone"></small></label>
+              <input type="tel" class="form-control" id="validationTel" placeholder="請輸入電話">
+            </div>
+            <div class="col-12">
+              <label for="validationEmail" class="form-label">Email <small class="text-danger fw-bold" data-message="email"></small></label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="validationEmail" placeholder="請輸入Email">
+                
+              </div>
+            </div>
+            <div class="col-12">
+              <label for="validationAddress" class="form-label">寄送地址 <small class="text-danger fw-bold" data-message="address"></small></label>
+              <input type="text" class="form-control" id="validationAddress" placeholder="請輸入寄送地址">
+            </div>
+            <div class="col-12 mb-4">
+              <label for="tradeWay" class="form-label">交易方式</label>
+              <select class="form-select" id="tradeWay">
+                <option value="ATM">ATM</option>
+                <option value="信用卡">信用卡</option>
+                <option value="超商付款">超商付款</option>
+              </select>
+              <div class="invalid-feedback">
+                請選擇一種交易方式
+              </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button class="js-orderBtn btn btn-dark px-5 py-2" type="submit">送出預訂資料</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+
+      <!-- Back to top button -->
+        <button
+        type="button"
+        class="btn btn-outline-danger rounded-circle text-center"
+        id="btn-back-to-top"
+        >
+        <span class="material-icons">
+          north
+          </span>
+          
+        </button>
+
+     <!--Footer-->
+    <footer class="bg-dark py-3">
+        <div class="container d-flex justify-content-center">
+            <p class="mb-1 text-white">Copyright © 2021 WOWOROOM.All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" charset="utf-8"></script>
+<!-- axios -->
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!--Bootstrap-->
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+    crossorigin="anonymous"></script>
+<script src="./js/util.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
